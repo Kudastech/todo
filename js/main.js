@@ -110,7 +110,7 @@ function removeTask(id) {
   list = list.filter(t => t.id !== id)
   localStorage.setItem("tasks", JSON.stringify(list))
 
-  showNotification("error", "Task was successfully deleted")
+  showNotification("error", "Todo List was successfully deleted")
   showTasksList()
 }
 
@@ -126,7 +126,7 @@ function editTask(id) {
   list[taskIndex].text = taskText
   localStorage.setItem("tasks", JSON.stringify(list))
 
-  showNotification("success", "Task was successfully updated")
+  showNotification("success", "Todo list was successfully updated")
   showTasksList()
 }
 
@@ -140,7 +140,7 @@ function clearAllTasks() {
 
   new Noty({
     type: "error",
-    text: '<i class="close icon"></i> There is no task to remove.',
+    text: '<i class="close icon"></i> There is no todo to remove.',
     layout: "bottomRight",
     timeout: 2000,
     progressBar: true,
@@ -200,7 +200,7 @@ function showClearAllTasksModal() {
 
   new Noty({
     type: "error",
-    text: '<i class="close icon"></i> There is no task to remove.',
+    text: '<i class="close icon"></i> There is no todo to remove.',
     layout: "bottomRight",
     timeout: 2000,
     progressBar: true,
