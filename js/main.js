@@ -21,8 +21,8 @@ function showTasksList() {
 			<div class="ui icon warning message">
 				<i class="inbox icon"></i>
 				<div class="content">
-					<div class="header">You have nothing task today!</div>
-					<div>Enter your tasks today above.</div>
+					<div class="header">You have nothing in your todo list today!</div>
+					<div>Enter your new todo today above.</div>
 				</div>
 			</div>
 		`
